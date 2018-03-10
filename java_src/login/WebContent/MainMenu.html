@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Menu - Default functionality</title>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#menu").menu();
+	});
+	$(function() {
+		$("#blogs").blogs();
+	});
+</script>
+<style>
+.ui-menu {
+	width: 155px;
+}
+</style>
+</head>
+<body>
+	<div class="widget">
+		<a href="Login.html" target="right"
+			onClick="parent.main.location.href = 'Login.html'; 
+return true;">
+			<img id="logo" src="logo.jpeg" height=90 width=180
+			style="position: relative;"><p></p>
+		</a>
+	</div>
+
+	<ul id="menu" type="square"
+		style="background-color: silver; border-color: buttonshadow; line-height: 20px;">
+
+		<li><div>
+				<a href="Register.html" target="right"
+					onClick="parent.main.location.href = 'Register.html'; 
+return true;">Register</a>
+			</div></li>
+		<li></li>
+		<li><div>
+				<a href="Login.html" target="right"
+					onClick="parent.main.location.href = 'Login.html'; 
+return true;">Login</a>
+			</div></li>
+		<li></li>
+<!-- 		<li><div> -->
+<!-- 				<a href="index.html" target="right" -->
+<!-- 					onClick="parent.main.location.href = 'index.html';  -->
+<!-- return true;">Continue -->
+<!-- 					as Guest</a> -->
+<!-- 			</div></li> -->
+<!-- 		<li></li> -->
+		<li><div><a href="aboutUs.html" target="right"
+					onClick="parent.main.location.href = 'aboutUs.html'; 
+return true;">About Us</a></div></li>
+		<li></li>
+		<li><div><a href="contactUs.html" target="right"
+					onClick="parent.main.location.href = 'contactUs.html'; 
+return true;">Contact Us</a></div></li>
+	
+
+	</ul>
+
+
+
+	<ul id="blogs" style="margin-left: 0px; left: 0px; padding-left: 0px;" >
+
+		<li><div class="widget">
+				<a
+					href="https://blogs.commons.georgetown.edu/cctp-638-mb1809/children-hunger/"
+					target="right"
+					onClick="parent.main.location.href = 'https://blogs.commons.georgetown.edu/cctp-638-mb1809/children-hunger/'; 
+return true;">
+					<img id="image2" src="image2.jpg" height=100 width=160
+					style="position: relative; text-align: left;">
+					
+				</a>
+
+			</div></li>
+
+
+<li><div class="widget">
+				<a
+					href="https://likelockedrooms.wordpress.com/tag/poverty/"
+					target="right"
+					onClick="parent.main.location.href = 'https://likelockedrooms.wordpress.com/tag/poverty/'; 
+return true;">
+					<img id="image1" src="image1.jpg" height=100 width=160
+					style="position: relative; text-align: left;">
+					
+				</a>
+
+			</div></li>
+
+	
+
+	</ul>
+
+
+</body>
+</html>

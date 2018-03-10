@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>login</display-name>
+	<servlet>
+		<description></description>
+		<display-name>LoginController</display-name>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.candidjava.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<description></description>
+		<display-name>RegisterController</display-name>
+		<servlet-name>RegisterController</servlet-name>
+		<servlet-class>com.candidjava.RegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterController</servlet-name>
+		<url-pattern>/RegisterController</url-pattern>
+	</servlet-mapping>
+
+
+<servlet>
+		<description></description>
+		<display-name>IndexController</display-name>
+		<servlet-name>IndexController</servlet-name>
+		<servlet-class>com.candidjava.IndexController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexController</servlet-name>
+		<url-pattern>/IndexController</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<description></description>
+		<display-name>DonateController</display-name>
+		<servlet-name>DonateController</servlet-name>
+		<servlet-class>com.candidjava.DonateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DonateController</servlet-name>
+		<url-pattern>/DonateController</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>listUpdateController</display-name>
+		<servlet-name>listUpdateController</servlet-name>
+		<servlet-class>com.candidjava.listUpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listUpdateController</servlet-name>
+		<url-pattern>/listUpdateController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>LogoutServlet</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.candidjava.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

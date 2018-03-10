@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Menu - Default functionality</title>
+<script>
+	function validate() {
+		var contactnumber = document.form.contactnumber.value;
+		
+		if ((contactnumber == null || contactnumber == "")) {
+ 			alert("Please provide contact number to proceed !");
+			
+			return false;
+		}
+		if ((password == null || password == "")) {
+ 			alert("Please provide password to proceed !");
+			
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+
+	<div style="text-align: center">
+		<h1>Login</h1>
+	</div>
+	<br>
+	<form name="form" onsubmit="return validate()" action="LoginController" method="post">
+		<!-- Do not use table to format fields. As a good practice use CSS -->
+		<table align="center">
+			<tr>
+				<td align="center">Enter Contact Number </td>
+				<td><input type="text" name="contactnumber" maxlength="10" /></td>
+			</tr>
+			
+			<tr>
+				<td align="center">Password </td>
+				<td><input type="password" name="password" min="8"/></td>
+			</tr>
+						
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Login"></input>
+				<input type="reset" value="Reset"></input></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<div class="widget" style="text-align: center;">
+		<a href="Register.html" target="right"
+			onClick="parent.main.location.href = 'Register.html'; 
+return true;">
+			New User.. Sign Up</a>
+	</div>
+
+
+</body>
+</html>
